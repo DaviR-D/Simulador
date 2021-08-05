@@ -58,9 +58,16 @@ automatum = file_A.read()[:-1:].split('\n')
 file_I = open('input.txt', 'r')
 input = file_I.read()[:-1:].split('\n')
 
+file_R = open('resultados.txt', 'w+')
+
+
 
 a = Simulador()
 a.generateFromInput(*automatum)
 
 for i in input:
-    print(i + ': ' + a.handler(i))
+    file_R.write(i + ': ' + a.handler(i) + '\n')
+
+file_A.close()
+file_I.close()
+file_R.close()
