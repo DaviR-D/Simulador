@@ -47,9 +47,9 @@ class Simulador:
         self.readTape(string)
         if('A' in self._resultados):
             self._resultados = list()
-            return 'Accept'
+            return '1'
         else:
-            return 'Reject'
+            return '0'
             self._resultados = list()
 
 file_A = open('automatum.txt', 'r')
@@ -66,7 +66,7 @@ a = Simulador()
 a.generateFromInput(*automatum)
 
 for i in input:
-    file_R.write(i + ': ' + a.handler(i) + '\n')
+    file_R.write(a.handler(i) + '\n')
 
 file_A.close()
 file_I.close()

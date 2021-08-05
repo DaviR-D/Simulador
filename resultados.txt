@@ -1,5 +1,5 @@
-abcabcbacbabcc: Reject
-acbacbacbb: Accept
-acbabcabcabbacac: Reject
-bcabcbacbbb: Accept
-acaccacacbacacbac: Reject
+0
+1
+0
+1
+0
