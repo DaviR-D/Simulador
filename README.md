@@ -34,3 +34,5 @@ Palavras de tamanho par (DFA)
 1|a|2, 2|a|3, 1|b|4, 4|b|5, 1|a|1, 1|b|1, 1|c|1
 
 Palavras terminadas em aa ou bb (NDFA)
+
+
